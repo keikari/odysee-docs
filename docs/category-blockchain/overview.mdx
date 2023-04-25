@@ -18,11 +18,14 @@ The most common use for blockchains is cryptocurrency. That's not LBRY's use.
 
 The LBRY blockchain's purpose is in the name - it's a digital media library. LBRY exists as a decentralized way of sharing digital media content.
 
-Whenever you upload a file, the file isn't actually being uploaded to Odysee. It's being uploaded to the LBRY network, which Odysee then pulls from.
+LBRY network uses blockchain to store the metadata(title, description, key-to-how-to-find-the-file, etc...) of the upload created on it. And then allows anyone to host the actual file for it.  
+Due to the way that blockchain works, the metadata uploaded in it can't practically be deleted, and it can only be updated or abandoned by the owner of the upload.
+
+Whenever you upload a file to Odysee. Its metadata is published to the LBRY network, and Odysee will host one copy of the file for the LBRY network.
 
 This means that every channel, post, comment, and so on isn't only accessible through Odysee, but through any frontend for the LBRY protocol.
 
-Odysee does have community guidelines and we do remove content that violates those guidelines. This means we stop pulling the content from LBRY. Neither we, or anyone else, is able to remove content from the LBRY network entirely.
+Odysee does have community guidelines and we do filter content that violates those guidelines. This means we don't show that content on Odysee, but that it may still be accesible in LBRY. If the content only violates our community guidelines, and isn't illegal for us to host, we will still continue to keep our copy of the file available for the LBRY network.
 
 So, even if content is banned from Odysee, that content would still be viewable on other LBRY frontends, granted that those frontends don't also have it banned.
 
@@ -30,4 +33,17 @@ So, even if content is banned from Odysee, that content would still be viewable 
 
 LBRY's use isn't cryptocurrency, but it does have its own token. This token is a *utility token*, meaning it has a specific purpose within LBRY and is valued for its *use* rather than as a financial investment.
 
-Put simply, LBRY Credits (LBC) are what allow content to be staked on the blockchain. LBC is required for uploads because without it, uploading onto LBRY is literally impossible.
+The blockchain mentioned above is basically a public database. Think about a spreadsheet in which anyone can add text/data they want. Without any access control, this database could get spammed and filled with data that even the one who added it there wouldn't care about.   
+However having someone or some entity to decide who can add data to blockchain, wouldn't be great either, and that's where the credits come in.
+
+For LBRY's purposes credits are like Chuck E. Cheese tokens(you use them to write data into LBRY's blockchain), with main difference being that rules for these credits were decided when the LBRY network started and are hard coded into the protocol, and can't be altered without consensus of majority of the people who use the protocol.  
+(Even if the creators of LBRY decided to change the rules, people would have to opt-in to these new rules by updating their software to accept the new rules as being valid, and this can't be forced).  
+
+For those who are interested to understand better how this all works, this is a good place to start(especially the video linked there about how Bitcoin works): https://lbry.com/faq/what-is-lbry 
+
+Put simply, LBRY Credits (LBC) are what allow content to be staked on the blockchain. LBC is required for uploads because without it, uploading onto LBRY is literally impossible.  
+
+## Is it necessary to know what is LBRY or how it works to use Odysee  
+Nope, this all happens behind the scenes for Odysee users  
+
+
